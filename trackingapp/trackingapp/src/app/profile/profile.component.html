@@ -1,0 +1,76 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+    
+                    <div class="card-body">
+                        <div class="card-title mb-4">
+                            <div class="d-flex justify-content-start">
+                                <div class="image-container">
+                                    <img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+                                    <div class="middle">
+                                        <input type="button" class="btn btn-secondary" id="btnChangePicture" value="Cambiar foto" />
+                                        <input type="file" style="display: none;" id="profilePicture" name="file" />
+                                    </div>
+                                </div>
+                                <div class="userData ml-3">
+                                    <h2 class="d-block" name="persona" style="font-size: 1.5rem; font-weight: bold">{{persona.fullName}}</h2> <!--[(ngModel)]="persona.screenName"-->
+                                    <!--<h6 class="d-block" name="persona" *ngIf="!`${persona.rol}`" >"Admin"</h6> [(ngModel)]="persona.rol"-->
+                                    <!--<h6 class="d-block" name="persona" *ngIf="`${persona.rol}`" >"User"</h6> [(ngModel)]="persona.rol"-->
+                                </div>
+                                <div class="ml-auto">
+                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Descartar cambios" />
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab-content ml-1" id="myTabContent">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Nombre de su propiedad</label>
+                                        </div>
+                                        <div class="col-md-8 col-6"> <!--[(ngModel)]="persona.country">-->
+                                            {{persona.terrainName}}
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Correo electrónico</label>
+                                        </div>
+                                        <div class="col-md-8 col-6"><!-- [(ngModel)]="persona.birthday">-->
+                                            {{persona.email}}
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-2 col-5">
+                                            <label style="font-weight:bold;">Cuenta de Twitter</label>
+                                        </div>
+                                        <div class="col-md-8 col-6"> <!--[(ngModel)]="persona.city">-->
+                                            {{persona.twitterAt}}
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <input type="button" class="btn btn-secondary" id="btnChangeInfo" value="Editar perfil" />
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--https://bootsnipp.com/snippets/E1nNa-->

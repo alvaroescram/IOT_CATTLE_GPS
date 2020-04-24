@@ -1,0 +1,64 @@
+<div class="page">
+    <div class="upper">
+        <h2>Ingresa tus datos</h2>
+    </div>
+    <div class="lower">
+        <div class="fit"></div>
+        <form (submit)="addPerson($event)">
+        <!-- Elementos de persona:
+                Nombre completo
+                Correo electrónico
+                Contraseña
+                Nombre del terreno
+                Twitter (opcional)
+                País             
+        -->
+            <div class="centro">
+                <div class="form-group row">
+                    <label for="inputFullName" class="col-sm-2 col-form-label">Nombre completo</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="persona" [(ngModel)]="persona.fullname" placeholder='Nombre completo'>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputMail" class="col-sm-2 col-form-label">Correo electrónico</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="persona" [(ngModel)]="persona.email" placeholder='Email'>
+                    </div>
+                </div>
+                 
+                <div class="form-group row">
+                    <label for="inputTerrainName" class="col-sm-2 col-form-label">Nombre de propiedad</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="persona" [(ngModel)]="persona.terrainName" placeholder='Nombre de propiedad'>
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="persona" [(ngModel)]="persona.password" placeholder='Contraseña'>
+                    </div>
+                </div>
+               
+                <div class="form-group row">
+                    <label for="inputCountry" class="col-sm-2 col-form-label">País</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="persona" [(ngModel)]="persona.country" placeholder='País'>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputTwitter" class="col-sm-2 col-form-label">Twitter</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="persona" [(ngModel)]="persona.twitterAt" placeholder='Cuenta de Twitter (opcional)'>
+                    </div>
+                </div>
+                
+                <button>Crear perfil</button>
+            </div>
+        </form>
+        <div class="fit"></div>
+    </div>
+</div>
