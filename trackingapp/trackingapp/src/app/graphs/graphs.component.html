@@ -1,30 +1,40 @@
-<div class="dropdowns">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="menus">
     <div class="column">
-        <!-- dropdown-->
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuVariables" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Variables
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Variable 1</a>
-              <a class="dropdown-item" href="#">Variable 2</a>
-              <a class="dropdown-item" href="#">Variable 3</a>
-            </div>
-        </div>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuVariables" data-toggle="dropdown" id="dropdownVariablesButton">
+          Variables
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownVariablesButton">
+          <li><a class="dropdown-item" href="#">Coordenadas</a></li>
+          <li><a class="dropdown-item" href="#">Temperatura</a></li>
+          <li><a class="dropdown-item" href="#">Zona</a></li>
+          <!--<li class="divider"></li>-->
+        </ul>
+      </div>  
     </div>
     <div class="column">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuAnimals" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Animales
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Vaca 1</a>
-              <a class="dropdown-item" href="#">Vaca 2</a>
-              <a class="dropdown-item" href="#">Vaca 3</a>
-            </div>
-        </div>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownAnimalsButton">
+          Animales
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownAnimalsButton">
+          <!-- ¿lista dinámica de objetos?-->
+          <li><a class="dropdown-item" href="#">Vaca 1</a></li>
+          <li><a class="dropdown-item" href="#">Vaca 2</a></li>
+          <li><a class="dropdown-item" href="#">Vaca 3</a></li>
+          <!--<li class="divider"></li>-->
+        </ul>
+      </div>
     </div>
-</div>
-<div class="graph-container">
-    <iframe src="https://thingspeak.com/channels/1022535/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-</div>
+  </div>
+  <div class="graph-container">
+      <iframe src="https://thingspeak.com/channels/1022535/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+  </div>
+</body>

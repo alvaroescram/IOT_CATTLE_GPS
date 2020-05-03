@@ -22,7 +22,7 @@
                                     </div>
                                 </div>
                                 <div class="userData ml-3">
-                                    <h2 class="d-block" name="persona" style="font-size: 1.5rem; font-weight: bold">{{persona.fullName}}</h2> <!--[(ngModel)]="persona.screenName"-->
+                                    <h2 class="d-block" name="persona" style="font-size: 1.5rem; font-weight: bold">persona.fullname</h2> <!--{{persona.fullName}}--><!--[(ngModel)]="persona.screenName"-->
                                     <!--<h6 class="d-block" name="persona" *ngIf="!`${persona.rol}`" >"Admin"</h6> [(ngModel)]="persona.rol"-->
                                     <!--<h6 class="d-block" name="persona" *ngIf="`${persona.rol}`" >"User"</h6> [(ngModel)]="persona.rol"-->
                                 </div>
@@ -40,7 +40,7 @@
                                             <label style="font-weight:bold;">Nombre de su propiedad</label>
                                         </div>
                                         <div class="col-md-8 col-6"> <!--[(ngModel)]="persona.country">-->
-                                            {{persona.terrainName}}
+                                            persona.terrainName
                                         </div>
                                     </div>
                                     <hr>
@@ -49,7 +49,7 @@
                                             <label style="font-weight:bold;">Correo electrónico</label>
                                         </div>
                                         <div class="col-md-8 col-6"><!-- [(ngModel)]="persona.birthday">-->
-                                            {{persona.email}}
+                                            persona.email
                                         </div>
                                     </div>
                                     <hr>
@@ -58,7 +58,7 @@
                                             <label style="font-weight:bold;">Cuenta de Twitter</label>
                                         </div>
                                         <div class="col-md-8 col-6"> <!--[(ngModel)]="persona.city">-->
-                                            {{persona.twitterAt}}
+                                            persona.twitterAt
                                         </div>
                                     </div>
                                     <hr>

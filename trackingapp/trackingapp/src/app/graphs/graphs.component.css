@@ -3,6 +3,7 @@ iframe {
     width: 80%;
     height: 400px;
     border: 1px;
+    border-width: 2px;
 }
 
 .column {

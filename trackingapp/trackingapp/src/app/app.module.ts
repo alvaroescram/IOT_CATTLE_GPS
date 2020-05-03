@@ -16,11 +16,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,7 @@ import { MatListModule } from '@angular/material/list';
     TabsComponent,
     SignupComponent,
     MapeditComponent,
-    HomeComponent,
-    MatListModule
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -43,10 +42,11 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
-    MatIconModule,
-    MatSidenavModule,
     MatGridListModule,
-    MatToolbarModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

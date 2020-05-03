@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+.page{
+    height: 100%;
+}
+.upper{
+    height: 15%;
+    align-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.lower{
+    
+    height: 85%;
+    width: 100%;
+    
+}
+
+.login_btn{
+    color: black;
+    color: rgb(0, 128, 255);
+    width: 100px;
+    padding-bottom: 5px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+.fit{
+    float: left;
+    box-sizing: border-box;
+    width: 2.5%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: solid 1px rgb(255, 255, 255);
+}
+.centro{
+    width: 90%;
+    float: left;
+    box-sizing: border-box;
+}

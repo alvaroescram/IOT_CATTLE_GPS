@@ -13,3 +13,8 @@ export class GraphsComponent implements OnInit {
   }
 
 }
+
+/**
+ * buscar como poner lista de vacas que cambie de forma dinámica :/
+ * lista de variables no cambia
+ */

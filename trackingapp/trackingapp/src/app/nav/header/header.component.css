@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+}
+
+.logoClass {
+    width: 100% ;
+    margin-right: 40px;
+    
+ }
+
+.logo {
+    vertical-align: middle;
+    width: 140px;
+    height: 75px;
+    float: left;
+}
+
+mat-toolbar {
+    height: 75px;
+    background-color: wheat;
+}
