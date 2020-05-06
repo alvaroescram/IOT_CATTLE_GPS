@@ -25,7 +25,8 @@ export class ProfileComponent implements OnInit {
   constructor(private signupService: SignupService  ) { }
 
   ngOnInit(): void {
-    this.persona = this.signupService.getCurrentPerson();
+    // this.persona = this.signupService.getCurrentPerson();
+    this.persona = this.signupService.getPerson(0);
     console.log(this.persona);
   }
 
