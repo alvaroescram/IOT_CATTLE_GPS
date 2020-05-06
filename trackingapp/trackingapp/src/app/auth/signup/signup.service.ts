@@ -9,7 +9,20 @@ let currentSession = 0; // usuario actual
 })
 
 export class SignupService {
-  persons: Array<Person> = [];
+  persons: Array<Person> = [
+    // alumno de prueba
+    {
+      personId: 0,
+      fullname: 'Test usuario',
+      email: 'prueba@test.com',
+      terrainName: 'rancho genérico',
+      country: 'Mexico',
+      password: '12345',
+      twitterAt: 'test',
+      ownedAnimals: '',
+      terrainNodes: ''
+    }
+  ];
 
   constructor() { }
 
@@ -29,6 +42,7 @@ export class SignupService {
   savePerson(objct) {
     console.log('Se esta guadando el obj con id', objct, objct.id);
     // this.logUser(objct.id);
+    // invocar guardado en el back-end
   }
 
   // Invocar logUser DESPUÉS del la comprobación de screenname y contraseña al presionar login, no al crear cuenta.

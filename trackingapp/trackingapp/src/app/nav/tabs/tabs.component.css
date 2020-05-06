@@ -1,11 +1,7 @@
 .toolbar-flex{
     flex: 1 0.5 auto;   
 }
-nav {
-    border-width: 2;
-    border-color: red;
-}
-
 body {
-    background-color: violet;
+    background-color: cornflowerblue;
+    height: 50px;
 }

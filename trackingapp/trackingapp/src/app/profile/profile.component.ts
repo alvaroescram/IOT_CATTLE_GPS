@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SignupService } from '../auth/signup/signup.service';
+import { Person } from '../data-models/Person';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  // Persona para sesión
+  persona: Person = {
+    personId: '',
+    fullname: '',
+    email: '',
+    terrainName: '',
+    country: '',
+    password: '',
+    twitterAt: '',
+    ownedAnimals: '',
+    terrainNodes: ''
+  };
+
+  constructor(private signupService: SignupService  ) { }
 
   ngOnInit(): void {
+    this.persona = this.signupService.getCurrentPerson();
+    console.log(this.persona);
   }
 
 }
